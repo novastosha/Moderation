@@ -27,7 +27,7 @@ public class Tickets implements Listener {
             plugin.getConfig().set("Tickets."+player.getUniqueId().toString()+".taken",false);
             plugin.saveConfig();
 
-            player.sendMessage("§a[TICKETS]§8 Created your ticket! §aPlease until an admin help you!");
+            player.sendMessage("§3[TICKETS]§8 Created your ticket! §bPlease until an admin help you!");
         }else{
             player.sendMessage("§cYou can't create multiple tickets!");
         }
@@ -36,8 +36,8 @@ public class Tickets implements Listener {
     public void acceptTicket(Player player, Player admin){
         if(plugin.getConfig().contains("Tickets."+player.getUniqueId().toString())){
             if(!plugin.getConfig().getBoolean("Tickets."+player.getUniqueId().toString()+".taken")) {
-                player.sendMessage("§a[TICKETS]§8 Ticket accepted! §aAccepted by: "+admin.getName());
-                admin.sendMessage("§a[TICKETS]§8 Ticket accepted!");
+                player.sendMessage("§3[TICKETS]§8 Ticket accepted! §3Accepted by: §b"+admin.getName());
+                admin.sendMessage("§3[TICKETS]§8 Ticket accepted!");
                 plugin.getConfig().set("Tickets."+player.getUniqueId().toString()+".taken",true);
                 plugin.getConfig().set("Tickets."+player.getUniqueId().toString()+".accepted-by",admin.getName());
                 plugin.saveConfig();
@@ -59,8 +59,8 @@ public class Tickets implements Listener {
                    plugin.getConfig().set("Tickets."+player.getUniqueId().toString()+".taken",null);
                    plugin.saveConfig();
 
-                   admin.sendMessage("§a[TICKETS]§8 Closed: "+player.getName()+"'s ticket!");
-                   player.sendMessage("§a[TICKETS]§8 Your ticket got closed! §aHope its solved!");
+                   admin.sendMessage("§3[TICKETS]§8 Closed: "+player.getName()+"'s ticket!");
+                   player.sendMessage("§3[TICKETS]§8 Your ticket got closed! §bHope its solved!");
                }
 
            }else{admin.sendMessage("§cThis ticket is not taken!");}
@@ -72,9 +72,9 @@ public class Tickets implements Listener {
         if(plugin.getConfig().contains("Tickets."+player.getUniqueId().toString())){
             if(!plugin.getConfig().getBoolean("Tickets."+player.getUniqueId().toString()+".taken")) {
                 if(reason == null) {
-                    player.sendMessage("§a[TICKETS]§8 Sorry but your ticket got rejected by: §a"+admin.getName());
+                    player.sendMessage("§3[TICKETS]§8 Sorry but your ticket got rejected by: §b"+admin.getName());
                 }else{
-                    player.sendMessage("§a[TICKETS]§8 Ticket got rejected by: §a"+admin.getName()+" §8Reason: "+reason);
+                    player.sendMessage("§3[TICKETS]§8 Ticket got rejected by: §b"+admin.getName()+" §8Reason: "+reason);
                 }
                 plugin.getConfig().set("Tickets."+player.getUniqueId().toString(),null);
                 plugin.getConfig().set("Tickets."+player.getUniqueId().toString()+".reason",null);
@@ -83,7 +83,7 @@ public class Tickets implements Listener {
                 plugin.getConfig().set("Tickets."+player.getUniqueId().toString()+".owner",null);
                 plugin.getConfig().set("Tickets."+player.getUniqueId().toString()+".taken",null);
                 plugin.saveConfig();
-                admin.sendMessage("§a[TICKETS]§8 Rejected: "+player.getName()+"'s ticket!");
+                admin.sendMessage("§3[TICKETS]§8 Rejected: §b"+player.getName()+"§8's ticket!");
             }else{admin.sendMessage("§cThis ticket is taken!");}
         }else{
             admin.sendMessage("§cCould not find that ticket!");
@@ -100,12 +100,12 @@ public class Tickets implements Listener {
                     plugin.getConfig().set("Tickets." + player.getUniqueId().toString() + ".taken", null);
                     if(plugin.getConfig().getString("Tickets."+player.getUniqueId().toString()+".accepted-by") != null){
                         Player admin = Bukkit.getPlayer(plugin.getConfig().getString("Tickets." + player.getUniqueId().toString() + ".accepted-by"));
-                        admin.sendMessage("§a[TICKETS] "+player.getName()+"§8 deleted their ticket!");
+                        admin.sendMessage("§3[TICKETS] "+player.getName()+"§8 deleted their ticket!");
                     }
                     plugin.getConfig().set("Tickets."+player.getUniqueId().toString()+".accepted-by",null);
                     plugin.saveConfig();
 
-                    player.sendMessage("§a[TICKETS]§8 Deleted your ticket!");
+                    player.sendMessage("§b[TICKETS]§8 Deleted your ticket!");
           }
          }
     }
@@ -121,8 +121,8 @@ public class Tickets implements Listener {
             if(plugin.getConfig().getBoolean("Tickets."+player.getUniqueId().toString()+".taken")) {
                 event.setCancelled(true);
                 Player admin = Bukkit.getPlayer(plugin.getConfig().getString("Tickets."+player.getUniqueId().toString()+".accepted-by"));
-                player.sendMessage("§a"+player.getName()+"§8: "+event.getMessage());
-                admin.sendMessage("§a"+player.getName()+"§8: "+event.getMessage());
+                player.sendMessage("§b"+player.getName()+"§8: "+event.getMessage());
+                admin.sendMessage("§3"+player.getName()+"§8: "+event.getMessage());
             }
             }
 
@@ -135,8 +135,8 @@ public class Tickets implements Listener {
                     event.setCancelled(true);
                     Player admin = Bukkit.getPlayer(plugin.getConfig().getString("Tickets." + player.getUniqueId().toString() + ".accepted-by"));
                     if (admin.getName().equalsIgnoreCase(event.getPlayer().getName())) {
-                        event.getPlayer().sendMessage("§a" + admin.getName() + "§8: " + event.getMessage());
-                        player.sendMessage("§a" + admin.getName() + "§8: " + event.getMessage());
+                        event.getPlayer().sendMessage("§3" + admin.getName() + "§8: " + event.getMessage());
+                        player.sendMessage("§b" + admin.getName() + "§8: " + event.getMessage());
                     }
                 }
             }
