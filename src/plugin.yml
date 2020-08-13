@@ -1,0 +1,21 @@
+name: LegendaryModeration
+author: novastosha (Sajed)
+description: LegendaryModeration plugin
+version: 0.1 IN-DEV VERSION
+main: dev.nova.lm.LegendaryModeration
+commands:
+  moderation:
+    description: Main command for the moderation plugin
+  vanish:
+      description: Command for staff used to hide staff from others!
+  setnote:
+      description: Set a note for a player
+  savelocation:
+    aliases: slc
+    description: Saves Your location when you switch to spectator!
+  track:
+    description: Track a player when they get an anticheat notification or mine a block!
+  tickets:
+    description: Tickets system!
+  wow:
+      description: teaq

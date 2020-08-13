@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LegendaryModeration">
+    <output-path>E:/Minecraft Server for java/plugins</output-path>
+    <root id="archive" name="LegendaryModeration.jar">
+      <element id="module-output" name="Moderation" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="LegendaryModeration" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fbcd5e4f-3e99-4344-9d14-58c3f6ac7fee" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="YML Minecraft" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1anWZL70YOGqDqTP9RIiL2wPjbm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="E:/Minecraft Server/System.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fbcd5e4f-3e99-4344-9d14-58c3f6ac7fee" name="Default Changelist" comment="" />
+      <created>1587371892846</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587371892846</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1587471811850">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1587471811850" />
+    <state x="756" y="409" width="407" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588004273071">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="756" y="409" width="407" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1588004273071" />
+    <state x="666" y="265" key="FileChooserDialogImpl" timestamp="1588500925513">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="666" y="265" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1588500925513" />
+    <state x="440" y="98" key="SettingsEditor" timestamp="1588500930243">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="440" y="98" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1588500930243" />
+    <state x="342" y="144" key="new project wizard" timestamp="1593856423571">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="342" y="144" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1593856423571" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1587384426380">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1587384426380" />
+  </component>
+</project>
