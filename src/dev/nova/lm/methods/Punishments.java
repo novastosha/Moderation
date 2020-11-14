@@ -123,7 +123,7 @@ public class Punishments implements Listener {
     }
 
     @EventHandler
-    public void onConnect(PlayerJoinEvent event) {
+    public void onConnect(PlayerLoginEvent event) {
         Player player = event.getPlayer();
 
         if (configuration.getBoolean("Bans." + player.getUniqueId().toString() + ".isPerm")) {

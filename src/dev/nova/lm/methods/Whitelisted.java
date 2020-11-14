@@ -16,7 +16,7 @@ public class Whitelisted implements Listener {
 
         }
         if(host.startsWith("events")){
-            punishments.kick(player,"No events is running! Do not connect with this IP!",null,true);
+            punishments.kick(player,"No events is running! Do not connect with this Proxy!",null,true);
         }
     }
 }

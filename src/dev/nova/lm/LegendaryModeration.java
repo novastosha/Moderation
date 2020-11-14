@@ -23,6 +23,7 @@ public class LegendaryModeration extends JavaPlugin {
     private TicketsCommand ticketsCommand;
     private Tracking tracking;
     private Punishments punishments;
+    private BanCommand banCommand;
 
     public static String combineArgs(int fromArg, String[] args){
         int inArg = fromArg;
@@ -60,6 +61,8 @@ public class LegendaryModeration extends JavaPlugin {
         getCommand(ticketsCommand.tickeCmd).setExecutor(ticketsCommand);
         getCommand(noteCommand.p).setExecutor(noteCommand);
         getCommand(new ModerationCommand().mod).setExecutor(new ModerationCommand());
+        getCommand(banCommand.cmdTemp).setExecutor(new BanCommand());
+        getCommand(banCommand.cmdPerm).setExecutor(new BanCommand());
 
         getConfig().options().copyDefaults(true); // NOTE: You do not have to use "plugin." if the class extends the java plugin
         //Save the config whenever you manipulate it
@@ -67,11 +70,5 @@ public class LegendaryModeration extends JavaPlugin {
 
     }
 
-    @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if(command.getName().equalsIgnoreCase("wow")){
-            punishments.permBan((Player) sender,"Test",null,false);
-        }
-        return true;
-    }
+
 }

@@ -135,10 +135,11 @@ public class GUIs implements Listener {
     public void openListPlayersGUI(Player player){
         Inventory inventory = Bukkit.createInventory(player, 54,"§3List Players");
         int i = 0;
-        ArrayList<String> lore = new ArrayList<>();
+
 
             for(Player guiPlayer : Bukkit.getOnlinePlayers()) {
                 //if (!players.contains(guiPlayer)) {
+                ArrayList<String> lore = new ArrayList<>();
 
                     lore.add(" ");
                     if(guiPlayer.hasPermission("lm.staff")){
@@ -164,6 +165,7 @@ public class GUIs implements Listener {
                     inventory.setItem(i, stack);
 
               //  }
+                i++;
             }
 
 

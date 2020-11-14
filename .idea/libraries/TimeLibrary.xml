@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="TimeLibrary">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../TimeLibrary/TimeLibrary.jar!/" />
+      <root url="jar://E:/TimeLibrary/TimeLibrary.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
